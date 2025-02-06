@@ -207,7 +207,7 @@ main {
 
 .content {
     min-height: 50vh;
-    width: 70%;
+    width: 90%;
     padding: 1.5rem;
     margin: 30px;
     display: flex;
@@ -232,19 +232,29 @@ main {
 .about-heading {
     padding: 0.5rem;
     margin: 15px;
+    text-align: center;
+    font-size: 2rem;
+    width: fit-content;
 }
 
 .about-objective {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
-    margin: 10px;
+    margin: 5px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about-objective p {
+    max-width: 65ch;
+    margin: 0 auto;
 }
 
 .about-skills {
-    border-top: 2px solid var(--TEXT-COLOR);
-    width: 80%;
-    padding: 1.5rem;
-    margin: 15px;
+    border-top: 2px solid var(--HEADER-COLOR);
+    width: 100%;
+    padding: 1rem;
+    margin: 5px;
 }
 
 .about-skills h4 {
@@ -253,17 +263,14 @@ main {
 
 .about-skills__type {
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: left;
-    align-items: center;
+    text-align: left;
 }
 
 .about-skills__list {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
