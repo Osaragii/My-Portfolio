@@ -266,6 +266,11 @@ main {
     text-align: left;
 }
 
+.about-skills__type p {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .about-skills__list {
     list-style-type: none;
     display: flex;
