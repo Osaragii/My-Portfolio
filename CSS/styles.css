@@ -17,6 +17,8 @@
     --HEADER-COLOR: #5A3E36; /* Warm brown */
     --NAV-BGCOLOR: rgba(255, 200, 210, 0.95); /* Soft pink */
     --HOVER-COLOR: #ffcad4; /* Lighter Pink */
+    --FOOTER-COLOR: #5A3E36;
+    --BOX-SHADOW: rgba(90, 62, 54, 0.6);
 }
 
 /* || GENERAL STYLES */
@@ -214,7 +216,7 @@ main {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 10px rgba(90, 62, 54, 0.6);
+    box-shadow: 0px 4px 10px var(--BOX-SHADOW);
 }
 
 .content:hover {
@@ -282,7 +284,7 @@ main {
 /* || FOOTER */
 footer {
     padding: 1rem;
-    background-color: var(--TEXT-COLOR);
+    background-color: var(--FOOTER-COLOR);
     color: var(--BGCOLOR1);
     width: 100%;
     display: flex;
@@ -290,4 +292,51 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+/* ||MEDIA QUERIES */
+
+/* SMALL */
+@media screen and (min-width: 768px) {
+    
+    .content {
+        width: min(80%, 1200px);
+    }
+
+    .about-skills__type {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    .content {
+        width: min(70%, 1400px);
+    }
+
+    .about-objective {
+        width: 100%;
+    }
+}
+
+/* DARK MODE SUPPORT */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR1: #1a1a1a;
+        --BGCOLOR2: #2d2d2d;
+        --TEXT-COLOR: #f0f0f0;
+        --HEADER-BGCOLOR: rgba(45, 45, 45, 0.9);
+        --HEADER-COLOR: #f0f0f0;
+        --NAV-BGCOLOR: rgba(26, 26, 26, 0.95);
+        --HOVER-COLOR: #4a4a4a;
+        --FOOTER-COLOR: rgba(255, 105, 180, 0.8);
+        --BOX-SHADOW: hotpink;
+    }
 }
