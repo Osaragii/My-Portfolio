@@ -40,6 +40,8 @@ header {
     padding: 1rem;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
 
 .header-title-line {
@@ -145,6 +147,54 @@ nav a:focus {
     transform: scale(1.2);
 }
 
+/* || SAKURA PETAL ANIMATION */
+@keyframes falling {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.sakura-petal {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../IMG/sakura-petal.png') no-repeat center/contain; /* Add sakura petal image */
+    animation: falling 10s linear infinite;
+    opacity: 0.8;
+}
+
+/* Randomly position sakura petals */
+.sakura-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Generating Multiple Sakura Petals */
+.sakura-container .sakura-petal:nth-child(1) { 
+    left: 10%; animation-duration: 12s;
+}
+
+.sakura-container .sakura-petal:nth-child(2) { 
+    left: 30%; animation-duration: 10s; 
+}
+.sakura-container .sakura-petal:nth-child(3) { 
+    left: 50%; animation-duration: 15s; 
+}
+.sakura-container .sakura-petal:nth-child(4) { 
+    left: 70%; animation-duration: 11s; 
+}
+.sakura-container .sakura-petal:nth-child(5) { 
+    left: 90%; animation-duration: 13s; 
+}
+
+/* ||MAIN & SECTION STYLES */
+
 /* || MAIN CONTENT */
 main {
     width: 100%;
@@ -153,6 +203,68 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+.content {
+    min-height: 50vh;
+    width: 70%;
+    padding: 1.5rem;
+    margin: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(90, 62, 54, 0.6);
+}
+
+.content:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+/* ||HOME SECTION */
+
+/* Nothing to see here */
+
+/* ||ABOUT SECTION */
+
+.about-heading {
+    padding: 0.5rem;
+    margin: 15px;
+}
+
+.about-objective {
+    width: 80%;
+    padding: 1rem;
+    margin: 10px;
+}
+
+.about-skills {
+    border-top: 2px solid var(--TEXT-COLOR);
+    width: 80%;
+    padding: 1.5rem;
+    margin: 15px;
+}
+
+.about-skills h4 {
+    padding: 1.5rem;
+}
+
+.about-skills__type {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.about-skills__list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
 }
 
 /* || FOOTER */
@@ -167,36 +279,3 @@ footer {
     align-items: center;
     text-align: center;
 }
-
-/* || SAKURA PETAL ANIMATION */
-@keyframes falling {
-    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
-    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
-}
-
-.sakura-petal {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: url('sakura-petal.png') no-repeat center/contain; /* Add sakura petal image */
-    animation: falling 10s linear infinite;
-    opacity: 0.8;
-}
-
-/* Randomly position sakura petals */
-.sakura-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-}
-
-/* Generating Multiple Sakura Petals */
-.sakura-container .sakura-petal:nth-child(1) { left: 10%; animation-duration: 12s; }
-.sakura-container .sakura-petal:nth-child(2) { left: 30%; animation-duration: 10s; }
-.sakura-container .sakura-petal:nth-child(3) { left: 50%; animation-duration: 15s; }
-.sakura-container .sakura-petal:nth-child(4) { left: 70%; animation-duration: 11s; }
-.sakura-container .sakura-petal:nth-child(5) { left: 90%; animation-duration: 13s; }
