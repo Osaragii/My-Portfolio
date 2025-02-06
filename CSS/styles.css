@@ -16,6 +16,9 @@ body {
     min-height: 100vh;
     font-family: "Nunito", sans-serif;
     flex-flow: column nowrap;
+    background-image: radial-gradient(circle,whitesmoke,#333);
+    background-image: -webkit-radial-gradient(circle,whitesmoke,#333);
+    background-image: -moz-radial-gradient(circle,whitesmoke,#333);
 }
 
 header {
@@ -134,4 +137,22 @@ nav a:hover,
 nav a:focus {
     transform: scale(1.2);
     transition: all 0.3s;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
