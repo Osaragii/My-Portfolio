@@ -157,9 +157,9 @@ nav a:focus {
 
 .sakura-petal {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url('../IMG/sakura-petal.png') no-repeat center/contain; /* Add sakura petal image */
+    width: 20px;
+    height: 20px;
+    background: url('../IMG/sakura-petal(2).png') no-repeat center/contain; /* Add sakura petal image */
     animation: falling 10s linear infinite;
     opacity: 0.8;
 }
@@ -183,16 +183,28 @@ nav a:focus {
 }
 
 .sakura-container .sakura-petal:nth-child(2) { 
-    left: 30%; animation-duration: 10s; 
+    left: 30%; animation-duration: 13s; 
 }
 .sakura-container .sakura-petal:nth-child(3) { 
-    left: 50%; animation-duration: 15s; 
+    left: 50%; animation-duration: 10s; 
 }
 .sakura-container .sakura-petal:nth-child(4) { 
-    left: 70%; animation-duration: 11s; 
+    left: 70%; animation-duration: 14s; 
 }
 .sakura-container .sakura-petal:nth-child(5) { 
-    left: 90%; animation-duration: 13s; 
+    left: 90%; animation-duration: 11s; 
+}
+.sakura-container .sakura-petal:nth-child(6) { 
+    left: 20%; animation-duration: 15s;
+}
+.sakura-container .sakura-petal:nth-child(7) { 
+    left: 40%; animation-duration: 10s; 
+}
+.sakura-container .sakura-petal:nth-child(8) { 
+    left: 60%; animation-duration: 13s; 
+}
+.sakura-container .sakura-petal:nth-child(9) { 
+    left: 80%; animation-duration: 12s; 
 }
 
 /* ||MAIN & SECTION STYLES */
