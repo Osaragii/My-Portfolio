@@ -19,6 +19,7 @@
     --HOVER-COLOR: #ffcad4; /* Lighter Pink */
     --FOOTER-COLOR: #5A3E36;
     --BOX-SHADOW: rgba(90, 62, 54, 0.6);
+    --RESUME-COLOR: rgba(90, 62, 54, 1);
 }
 
 /* || GENERAL STYLES */
@@ -239,6 +240,32 @@ main {
 
 /* ||HOME SECTION */
 
+.home-links {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.resume-links {
+    width: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.resume {
+    color: var(--RESUME-COLOR);
+    margin-top: 22px;
+}
+
+.home-links a:any-link {
+    color: var(--BOX-SHADOW);
+    text-decoration: none;
+}
+
 /* Nothing to see here */
 
 /* ||ABOUT SECTION */
@@ -350,5 +377,6 @@ footer {
         --HOVER-COLOR: #4a4a4a;
         --FOOTER-COLOR: rgba(255, 105, 180, 0.8);
         --BOX-SHADOW: hotpink;
+        --RESUME-COLOR: pink;
     }
 }

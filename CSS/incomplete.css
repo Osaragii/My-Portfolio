@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&dislay=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FFF5F0, #FFB7C5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div p {
+    font-size: 3rem;
+    text-decoration: underline;
+}
