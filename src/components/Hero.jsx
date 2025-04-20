@@ -52,7 +52,7 @@ const Hero = () => {
             </h1>
         </div>
 
-        <img className='absolute -z-20 bg-cover min-w-full min-h-screen top-0 left-0' src="src\assets\background.png" alt="back-img" />
+        <img className='absolute -z-20 bg-cover min-w-full min-h-screen top-0 left-0' src="src/assets/background.png" alt="back-img" />
     </main>
   );
 };
